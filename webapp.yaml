@@ -15,7 +15,7 @@ spec:
       labels: 
         app: webapp
     spec:
-      containters:
+      containers:
       - name: webapp
         image: nanajanashia/k8s-demo-app:v1.0
         ports:
