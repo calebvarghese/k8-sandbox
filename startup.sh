@@ -1,6 +1,10 @@
 #!/bin/bash
 
-k apply -f mongo-config.yaml
-k apply -f mongo-secret.yaml
-k apply -f mongo.yaml
-k apply -f webapp.yaml
+minikube start
+
+kubectl apply -f mongo-config.yaml
+kubectl apply -f mongo-secret.yaml
+kubectl apply -f mongo.yaml
+kubectl apply -f webapp.yaml
+
+minikube service webapp-service
